@@ -102,7 +102,7 @@ public class CategoryServiceImpl implements ICategoryService{
 		} catch (Exception e) {
 			
 			response.setMetadata("Respuesta nok", "-1", "Error al grabar categoria");
-			e.getStackTrace();
+			e.getStackTrace(); 
 			return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 			
 			
